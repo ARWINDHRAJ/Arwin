@@ -144,8 +144,12 @@ export default function Home() {
     </main>
   );
 }
-
-function ProjectCard({ title, description, tech }) {
+interface ProjectCardProps {
+  title: string;
+  description: string;
+  tech: string[];
+}
+function ProjectCard({ title, description, tech }: ProjectCardProps) {
   return (
     <div className="bg-card p-6 rounded-lg shadow-lg hover:shadow-xl transition-all animate-fade-in">
       <h3 className="text-xl font-semibold mb-3">{title}</h3>
@@ -164,7 +168,12 @@ function ProjectCard({ title, description, tech }) {
   );
 }
 
-function SkillCategory({ title, skills }) {
+interface SkillCategoryProps {
+  title: string;
+  skills: string[];
+}
+
+function SkillCategory({ title, skills }: SkillCategoryProps) {
   return (
     <div className="animate-fade-in">
       <h3 className="text-xl font-semibold mb-4">{title}</h3>
