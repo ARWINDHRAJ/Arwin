@@ -1,6 +1,6 @@
 import { ArrowUpRight, Github, Linkedin, Mail } from "lucide-react";
 import Image from "next/image";
-import profilePic from 'D:/Project_Files/Portfolio_arwin/profile.jpg'
+import profilePic from 'profile.jpg'
 export default function Home() {
   return (
     <main className="min-h-screen bg-background">
