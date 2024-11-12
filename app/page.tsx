@@ -144,6 +144,7 @@ export default function Home() {
     </main>
   );
 }
+
 interface ProjectCardProps {
   title: string;
   description: string;
@@ -167,7 +168,6 @@ function ProjectCard({ title, description, tech }: ProjectCardProps) {
     </div>
   );
 }
-
 interface SkillCategoryProps {
   title: string;
   skills: string[];
